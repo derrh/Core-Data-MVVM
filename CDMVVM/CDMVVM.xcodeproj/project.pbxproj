@@ -8,14 +8,19 @@
 
 /* Begin PBXBuildFile section */
 		49131F0917C6C48900197AB9 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 49131F0817C6C48900197AB9 /* Foundation.framework */; };
-		49131F0E17C6C48900197AB9 /* CDMVVM.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 49131F0D17C6C48900197AB9 /* CDMVVM.h */; };
-		49131F1017C6C48900197AB9 /* CDMVVM.m in Sources */ = {isa = PBXBuildFile; fileRef = 49131F0F17C6C48900197AB9 /* CDMVVM.m */; };
 		49131F1717C6C48900197AB9 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 49131F1617C6C48900197AB9 /* XCTest.framework */; };
 		49131F1817C6C48900197AB9 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 49131F0817C6C48900197AB9 /* Foundation.framework */; };
 		49131F1A17C6C48900197AB9 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 49131F1917C6C48900197AB9 /* UIKit.framework */; };
 		49131F1D17C6C48900197AB9 /* libCDMVVM.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 49131F0517C6C48900197AB9 /* libCDMVVM.a */; };
 		49131F2317C6C48900197AB9 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 49131F2117C6C48900197AB9 /* InfoPlist.strings */; };
 		49131F2517C6C48900197AB9 /* CDMVVMTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 49131F2417C6C48900197AB9 /* CDMVVMTests.m */; };
+		49131F2F17C6C55100197AB9 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 49131F2E17C6C55100197AB9 /* CoreData.framework */; };
+		49131F3317C6C66500197AB9 /* DHTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 49131F3217C6C66500197AB9 /* DHTableViewController.m */; };
+		49131F3417C6C66500197AB9 /* DHTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 49131F3217C6C66500197AB9 /* DHTableViewController.m */; };
+		49131F3B17C6C98200197AB9 /* DHCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 49131F3A17C6C98200197AB9 /* DHCollectionViewController.m */; };
+		49131F3C17C6C98200197AB9 /* DHCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 49131F3A17C6C98200197AB9 /* DHCollectionViewController.m */; };
+		49131F4017C6CCF200197AB9 /* UICollectionView+NSFetchedResultsController.m in Sources */ = {isa = PBXBuildFile; fileRef = 49131F3F17C6CCF200197AB9 /* UICollectionView+NSFetchedResultsController.m */; };
+		49131F4117C6CCF200197AB9 /* UICollectionView+NSFetchedResultsController.m in Sources */ = {isa = PBXBuildFile; fileRef = 49131F3F17C6CCF200197AB9 /* UICollectionView+NSFetchedResultsController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,7 +40,6 @@
 			dstPath = "include/$(PRODUCT_NAME)";
 			dstSubfolderSpec = 16;
 			files = (
-				49131F0E17C6C48900197AB9 /* CDMVVM.h in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -45,14 +49,22 @@
 		49131F0517C6C48900197AB9 /* libCDMVVM.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libCDMVVM.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		49131F0817C6C48900197AB9 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		49131F0C17C6C48900197AB9 /* CDMVVM-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "CDMVVM-Prefix.pch"; sourceTree = "<group>"; };
-		49131F0D17C6C48900197AB9 /* CDMVVM.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CDMVVM.h; sourceTree = "<group>"; };
-		49131F0F17C6C48900197AB9 /* CDMVVM.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CDMVVM.m; sourceTree = "<group>"; };
 		49131F1517C6C48900197AB9 /* CDMVVMTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CDMVVMTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		49131F1617C6C48900197AB9 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		49131F1917C6C48900197AB9 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
 		49131F2017C6C48900197AB9 /* CDMVVMTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "CDMVVMTests-Info.plist"; sourceTree = "<group>"; };
 		49131F2217C6C48900197AB9 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		49131F2417C6C48900197AB9 /* CDMVVMTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CDMVVMTests.m; sourceTree = "<group>"; };
+		49131F2E17C6C55100197AB9 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		49131F3017C6C57F00197AB9 /* DHCollectionViewModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DHCollectionViewModel.h; sourceTree = "<group>"; };
+		49131F3117C6C66500197AB9 /* DHTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DHTableViewController.h; sourceTree = "<group>"; };
+		49131F3217C6C66500197AB9 /* DHTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DHTableViewController.m; sourceTree = "<group>"; };
+		49131F3517C6C6CF00197AB9 /* DHTableViewAdapter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DHTableViewAdapter.h; sourceTree = "<group>"; };
+		49131F3917C6C98200197AB9 /* DHCollectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DHCollectionViewController.h; sourceTree = "<group>"; };
+		49131F3A17C6C98200197AB9 /* DHCollectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DHCollectionViewController.m; sourceTree = "<group>"; };
+		49131F3E17C6CCF200197AB9 /* UICollectionView+NSFetchedResultsController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UICollectionView+NSFetchedResultsController.h"; sourceTree = "<group>"; };
+		49131F3F17C6CCF200197AB9 /* UICollectionView+NSFetchedResultsController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UICollectionView+NSFetchedResultsController.m"; sourceTree = "<group>"; };
+		49131F4217C6CF2200197AB9 /* DHCollectionViewAdapter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DHCollectionViewAdapter.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +72,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				49131F2F17C6C55100197AB9 /* CoreData.framework in Frameworks */,
 				49131F0917C6C48900197AB9 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -100,6 +113,7 @@
 		49131F0717C6C48900197AB9 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				49131F2E17C6C55100197AB9 /* CoreData.framework */,
 				49131F0817C6C48900197AB9 /* Foundation.framework */,
 				49131F1617C6C48900197AB9 /* XCTest.framework */,
 				49131F1917C6C48900197AB9 /* UIKit.framework */,
@@ -110,8 +124,9 @@
 		49131F0A17C6C48900197AB9 /* CDMVVM */ = {
 			isa = PBXGroup;
 			children = (
-				49131F0D17C6C48900197AB9 /* CDMVVM.h */,
-				49131F0F17C6C48900197AB9 /* CDMVVM.m */,
+				49131F3D17C6CCF200197AB9 /* UICollectionView+NSFechtedResultsController */,
+				49131F3817C6C82F00197AB9 /* ViewModel */,
+				49131F3717C6C82000197AB9 /* Controller */,
 				49131F0B17C6C48900197AB9 /* Supporting Files */,
 			);
 			path = CDMVVM;
@@ -141,6 +156,36 @@
 				49131F2117C6C48900197AB9 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		49131F3717C6C82000197AB9 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				49131F3517C6C6CF00197AB9 /* DHTableViewAdapter.h */,
+				49131F3117C6C66500197AB9 /* DHTableViewController.h */,
+				49131F3217C6C66500197AB9 /* DHTableViewController.m */,
+				49131F4217C6CF2200197AB9 /* DHCollectionViewAdapter.h */,
+				49131F3917C6C98200197AB9 /* DHCollectionViewController.h */,
+				49131F3A17C6C98200197AB9 /* DHCollectionViewController.m */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		49131F3817C6C82F00197AB9 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				49131F3017C6C57F00197AB9 /* DHCollectionViewModel.h */,
+			);
+			name = ViewModel;
+			sourceTree = "<group>";
+		};
+		49131F3D17C6CCF200197AB9 /* UICollectionView+NSFechtedResultsController */ = {
+			isa = PBXGroup;
+			children = (
+				49131F3E17C6CCF200197AB9 /* UICollectionView+NSFetchedResultsController.h */,
+				49131F3F17C6CCF200197AB9 /* UICollectionView+NSFetchedResultsController.m */,
+			);
+			path = "UICollectionView+NSFechtedResultsController";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -187,6 +232,7 @@
 		49131EFD17C6C48900197AB9 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				CLASSPREFIX = DH;
 				LastUpgradeCheck = 0500;
 				ORGANIZATIONNAME = "Derrick Hathaway";
 			};
@@ -224,7 +270,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				49131F1017C6C48900197AB9 /* CDMVVM.m in Sources */,
+				49131F4017C6CCF200197AB9 /* UICollectionView+NSFetchedResultsController.m in Sources */,
+				49131F3B17C6C98200197AB9 /* DHCollectionViewController.m in Sources */,
+				49131F3317C6C66500197AB9 /* DHTableViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -233,6 +281,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				49131F2517C6C48900197AB9 /* CDMVVMTests.m in Sources */,
+				49131F3417C6C66500197AB9 /* DHTableViewController.m in Sources */,
+				49131F4117C6CCF200197AB9 /* UICollectionView+NSFetchedResultsController.m in Sources */,
+				49131F3C17C6C98200197AB9 /* DHCollectionViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
