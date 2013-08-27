@@ -21,6 +21,12 @@
 		49131F3C17C6C98200197AB9 /* DHCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 49131F3A17C6C98200197AB9 /* DHCollectionViewController.m */; };
 		49131F4017C6CCF200197AB9 /* UICollectionView+NSFetchedResultsController.m in Sources */ = {isa = PBXBuildFile; fileRef = 49131F3F17C6CCF200197AB9 /* UICollectionView+NSFetchedResultsController.m */; };
 		49131F4117C6CCF200197AB9 /* UICollectionView+NSFetchedResultsController.m in Sources */ = {isa = PBXBuildFile; fileRef = 49131F3F17C6CCF200197AB9 /* UICollectionView+NSFetchedResultsController.m */; };
+		497E5F7817C7B1B700380F93 /* DHCollectionViewModel.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 49131F3017C6C57F00197AB9 /* DHCollectionViewModel.h */; };
+		497E5F7917C7B1C600380F93 /* DHTableViewAdapter.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 49131F3517C6C6CF00197AB9 /* DHTableViewAdapter.h */; };
+		497E5F7A17C7B1C600380F93 /* DHTableViewController.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 49131F3117C6C66500197AB9 /* DHTableViewController.h */; };
+		497E5F7B17C7B1C600380F93 /* DHCollectionViewAdapter.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 49131F4217C6CF2200197AB9 /* DHCollectionViewAdapter.h */; };
+		497E5F7C17C7B1C600380F93 /* DHCollectionViewController.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 49131F3917C6C98200197AB9 /* DHCollectionViewController.h */; };
+		497E5F7E17C7B20400380F93 /* CDMVVM.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 497E5F7D17C7B1FA00380F93 /* CDMVVM.h */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +46,12 @@
 			dstPath = "include/$(PRODUCT_NAME)";
 			dstSubfolderSpec = 16;
 			files = (
+				497E5F7E17C7B20400380F93 /* CDMVVM.h in CopyFiles */,
+				497E5F7817C7B1B700380F93 /* DHCollectionViewModel.h in CopyFiles */,
+				497E5F7917C7B1C600380F93 /* DHTableViewAdapter.h in CopyFiles */,
+				497E5F7A17C7B1C600380F93 /* DHTableViewController.h in CopyFiles */,
+				497E5F7B17C7B1C600380F93 /* DHCollectionViewAdapter.h in CopyFiles */,
+				497E5F7C17C7B1C600380F93 /* DHCollectionViewController.h in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -65,6 +77,7 @@
 		49131F3E17C6CCF200197AB9 /* UICollectionView+NSFetchedResultsController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UICollectionView+NSFetchedResultsController.h"; sourceTree = "<group>"; };
 		49131F3F17C6CCF200197AB9 /* UICollectionView+NSFetchedResultsController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UICollectionView+NSFetchedResultsController.m"; sourceTree = "<group>"; };
 		49131F4217C6CF2200197AB9 /* DHCollectionViewAdapter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DHCollectionViewAdapter.h; sourceTree = "<group>"; };
+		497E5F7D17C7B1FA00380F93 /* CDMVVM.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CDMVVM.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -124,6 +137,7 @@
 		49131F0A17C6C48900197AB9 /* CDMVVM */ = {
 			isa = PBXGroup;
 			children = (
+				497E5F7D17C7B1FA00380F93 /* CDMVVM.h */,
 				49131F3D17C6CCF200197AB9 /* UICollectionView+NSFechtedResultsController */,
 				49131F3817C6C82F00197AB9 /* ViewModel */,
 				49131F3717C6C82000197AB9 /* Controller */,
@@ -454,6 +468,7 @@
 				49131F2A17C6C48900197AB9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		49131F2B17C6C48900197AB9 /* Build configuration list for PBXNativeTarget "CDMVVMTests" */ = {
 			isa = XCConfigurationList;
@@ -462,6 +477,7 @@
 				49131F2D17C6C48900197AB9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

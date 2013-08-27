@@ -8,7 +8,11 @@
 
 #import <Foundation/Foundation.h>
 
+#ifdef __IPHONE_OS_VERSION_MAX_ALLOWED
 @class DHTableViewController, DHCollectionViewController;
+#endif
+
+
 @protocol DHCollectionViewModel <NSObject>
 - (NSFetchedResultsController *)fetchedResultsController;
 - (void)refreshWithCompletionBlock:(void (^)())block;

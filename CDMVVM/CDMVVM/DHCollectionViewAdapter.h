@@ -14,5 +14,4 @@
 
 - (void)cellSelectedInCollectionViewController:(UICollectionViewController *)controller atIndexPath:(NSIndexPath *)indexPath;
 
-
 @end

@@ -12,7 +12,7 @@
 #import "DHCollectionViewModel.h"
 #import "DHCollectionViewAdapter.h"
 
-@interface DHCollectionViewController () <NSFetchedResultsControllerDelegate>
+@interface DHCollectionViewController () <NSFetchedResultsControllerDelegate, UICollectionViewDelegateFlowLayout>
 @property (nonatomic) id<DHCollectionViewModel> viewModel;
 @property (nonatomic) NSFetchedResultsController *fetchedResultsController;
 @end
@@ -21,7 +21,19 @@
 
 + (instancetype)controllerWithViewModel:(id<DHCollectionViewModel>)viewModel
 {
-    DHCollectionViewController *me = [[self alloc] init];
+    UICollectionViewFlowLayout *layout = [UICollectionViewFlowLayout new];
+    layout.itemSize = CGSizeMake(300, 260);
+    layout.minimumInteritemSpacing = 20.f;
+    layout.minimumLineSpacing = 20.f;
+    CGFloat inset = ([UIDevice currentDevice].userInterfaceIdiom == UIUserInterfaceIdiomPad) ? 40 : 20;
+    layout.sectionInset = UIEdgeInsetsMake(inset, inset, inset, inset);
+    layout.scrollDirection = UICollectionViewScrollDirectionVertical;
+    return [self controllerWithViewModel:viewModel layout:layout];
+}
+
++ (instancetype)controllerWithViewModel:(id<DHCollectionViewModel>)viewModel layout:(UICollectionViewLayout *)layout
+{
+    DHCollectionViewController *me = [[DHCollectionViewController alloc] initWithCollectionViewLayout:layout];
     me.viewModel = viewModel;
     return me;
 }
@@ -29,7 +41,6 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    
     if ([self.viewModel respondsToSelector:@selector(collectionViewControllerViewDidLoad:)]) {
         [self.viewModel collectionViewControllerViewDidLoad:self];
     }
